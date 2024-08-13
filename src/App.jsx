@@ -1,21 +1,24 @@
-import { Link } from "react-router-dom"
+import React from 'react';
+import MusicPlayer from './About';
+import './App.css';
 
 const Title = () => {
   return (
-    <h1>
-      Hello World!
+    <h1 className='title'>
+      
     </h1>
   )
 }
 
 function App() {
   return (
-    <div className="p-5">
-      <Link to='/about'>About</Link>
+    <div className="App">
       <Title />
+      <header className="App-header">
+        <MusicPlayer />
+      </header>
     </div>
-  )
+  );
 }
 
-
-export default App
+export default App;
